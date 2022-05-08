@@ -1,0 +1,29 @@
+.container {
+  margin: 0 auto;
+  width: 300px;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 4px auto;
+}
+
+input[type="submit"] {
+  width: 100px;
+  }
+
+p {
+  text-align: center;
+}
+
+.buttonholder {
+  text-align: center;
+}
+
+input[disabled] {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 80%;
+}

@@ -1,0 +1,5 @@
+Viagem 1:Ovelha (Ida)   Ovelha - x - x
+Viagem 2:Lobo (Ida) Ovelha - Lobo - x
+Viagem 2.5:Ovelha (Volta) x - Lobo - x
+Viagem 3:Alfafa (Ida) x - Lobo - Alfafa
+Viagem 4:Ovelha (Ida) Ovelha - Lobo - Alfafa
