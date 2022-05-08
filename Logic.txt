@@ -3,3 +3,10 @@ Viagem 2:Lobo (Ida) Ovelha - Lobo - x
 Viagem 2.5:Ovelha (Volta) x - Lobo - x
 Viagem 3:Alfafa (Ida) x - Lobo - Alfafa
 Viagem 4:Ovelha (Ida) Ovelha - Lobo - Alfafa
+
+
+
+Viagem 1 - Ovelha vai e fica sozinha
+Viagem 2 - Lobo vai e traz a ovelha 
+Viagem 3 - Leva a alfafa e deixa com o lobo
+Viagem 4 - Leva a ovelha
