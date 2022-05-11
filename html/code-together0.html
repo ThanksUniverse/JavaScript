@@ -9,37 +9,43 @@
 </head>
 <body>
     <main>
+        <header>
+            <script src="../js/dark-mode.js"></script>
+            <img src="../images/dark.webp" onclick="darkMode()" id="dark" alt="Dark Mode">
+        </header>
         <section>
             <div class="form-container">
                 <h4>Calcular Média</h4>
                 <form>
                     <div class="notas">
                         <label for="nota01">Nota 1</label>
-                        <input type="number" id="nota01" name="n1">
+                        <input type="number" class="ninput" id="nota01" name="n1" min="0" step="0.1" max="10">
                     </div>
                     <div class="notas">
                         <label for="nota02">Nota 2</label>
-                        <input type="number" id="nota02" name="n2">
+                        <input type="number" id="nota02" name="n2" min="0" step="0.1" max="10">
                     </div>
                     <div class="notas">
                         <label for="nota03">Nota 3</label>
-                        <input type="number" id="nota03" name="n3">
+                        <input type="number" id="nota03" name="n3" min="0" step="0.1" max="10">
                     </div>
                     <div class="notas">
                         <label for="nota04">Nota 4</label>
-                        <input type="number" id="nota04" name="n4">
+                        <input type="number" id="nota04" name="n4" min="0" step="0.1" max="10">
                     </div>
                     <script src="../js/code-together0.js"></script>
                     <div class="button">
-                        <button id="button0">Calcular</button>
-                        <button id="button1">Reset</button>
+                        <button id="button0" onclick="MediaCalc()">Calcular</button>
                     </div>
                     <div class="resultado">
                         <label for="media">Média:</label>
-                        <input type="text" id="media" readonly>
+                        <input type="text" id="resultado" readonly>
                     </div>
                     <div class="situacao">
-                        <input placeholder="" readonly></input>
+                        <input id ="state" class="reset" readonly></input>
+                    </div>
+                    <div class="clean">
+                        <button id="button1" class="reset" onclick="reset()">Reset</button>
                     </div>
                 </form>
             </div>
@@ -47,7 +53,63 @@
         <footer>
             <p>Desenvolvido por: <em><a href="https://github.com/ThanksUniverse/" target="_blank">Pedro</a></em></p>
         </footer>
-
     </main>
 </body>
 </html>
+
+<pre>
+Exercícios:
+1. Resolva as operações:
+● 10 + 15 = 25 (number)
+● “10” + 2 = 102 (string)
+● “10” * 2 = 20 (number)
+● “10” / 3 = 3.33(float)
+● “10” % 3 = 1(float)
+● 10 + true = 11 (number)
+● 10 == ”10” = true (boolean)
+● 10 === “10” = false (boolean)
+● 10 < 11 = true (boolean)
+● 10 > 12 = false (boolean)
+● 10 <= 10.1 = true (boolean)
+● 10 > 9.99 = true (boolean)
+● 10 != “dez” = true (boolean)
+● “dez” + true = deztrue (string)
+● 10 + false = 10 (number)
+● 10 * false = 0 (number)
+● true + true = 2 (number)
+● 10++ = 11 (number)
+● 10-- = 9 (number)
+● 1 & 1 = 1 (number)
+● 1 & 0 = 0 (number)
+● 0 & 0 = 0 (number)
+● 1 & 0 = 0 (number)
+● 0 / 1 = 0 (number)
+● 5 + 5 == 10 = true (boolean)
+● “5” + ”5” == 10 = false (boolean)
+● “5” * 2 > 9 = true (boolean)
+● (10 + 10) * 2 = 40 (number)
+● 10 + 10 * 2 = 30 (number)
+
+2. Responda as perguntas de acordo com as variáveis.
+var branco = “preto”; 
+var preto = “cinza”;
+var cinza = “branco”;
+var carro = “preto”;
+var valor = 30000;
+var prestacao = 750;
+
+a) branco == “branco” - false (boolean)
+b) branco == cinza - false (boolean)
+c) carro === branco - true (boolean)
+d) var cavalo = carro == “preto” ? “cinza” : “marron”; Resposta: true - "cinza"
+e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada
+de 3.000? Demonstre a operação.
+let valor = 30000
+let prestacao = 750
+let entrada = 3000
+
+(valor -= entrada) / prestacao
+f) Somando as variáveis de cores é formada uma string de quantos caracteres?
+let f = branco + preto + cinza
+f.length
+</pre>
