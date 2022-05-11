@@ -8,14 +8,3 @@ function darkMode() {
         image.src = "../images/dark.webp";
     }
 }
-
-let valor = 30000
-let prestacao = 750
-let entrada = 3000
-
-(valor -= entrada) / prestacao
-
-console.log(valor)
-
-let f = branco + preto + cinza
-f.length
