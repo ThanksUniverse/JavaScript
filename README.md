@@ -1,6 +1,7 @@
 # JavaScript
 
 ## Módulo 13-Tarefa
+<pre>
 Exercícios:
 1. Resolva as operações:
 ● 10 + 15 = 25 (number)
@@ -55,5 +56,7 @@ let entrada = 3000
 f) Somando as variáveis de cores é formada uma string de quantos caracteres?
 let f = branco + preto + cinza
 f.length
+
+</pre>
 
 # Módulo13-Tarefa
