@@ -46,8 +46,4 @@ function MediaCalc() { //Calcular média
 
     console.log(media);
     console.log(a + b + c + d)
-
-//Reset Button
- 
-     document.getElementByClassName('reset').reset();
 }
