@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../css/funcoes.css" />
+      <title>JavaScript</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <form id="form0">
+            <h5>Faça seu cadastro</h5>
+            <input type="text" placeholder="Nome" name="nome" class="verifyLetters" />
+            <input type="email" placeholder="Email" name="email" class="verifyEmail" />
+            <input type="tel" placeholder="Telefone" name="telefone" />
+            <input type="text" placeholder="Cidade" name="cidade" class="verifyCity" />
+            <input type="text" placeholder="CEP" name="cep" class="verifyCep" />
+            <input type="text" placeholder="UF" name="uf" class="verifyDigits" maxlength="2" onkeydown="LimitCharacters(this)" onkeyup="LimitCharacters(this)" />
+            <div class="submit">
+               <button type="submit">Enviar</button>
+            </div>
+         </form>
+      </div>
+      <div class="container-message"><div class="message"></div></div>
+      <script type="text/javascript" src="../js/formulario.js"></script>
+   </body>
+</html>

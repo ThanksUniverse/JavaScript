@@ -1,202 +1,202 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 html {
-    font-size: 62.5%;
-    background-color: #eaeaea;
+   font-size: 62.5%;
+   background-color: #eaeaea;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    height: 100vh;
-    overflow: hidden;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.4rem;
+   height: 100vh;
+   overflow: hidden;
 }
 
 .dark-mode {
-    background-color: rgb(70, 70, 70);
+   background-color: rgb(70, 70, 70);
 }
 
 header {
-    width: 100%;
+   width: 100%;
 }
 
 header img {
-    width: 40;
-    height: 40px;
-    border-radius: 50%;
-    max-width: 100%;
-    margin: 0 10px;
-    position: relative;
-    box-shadow: 0px 0px 5px 4px black;
-    background-color: gray;
-    transition: all 1s; 
-    display: block;
-    float: left;
+   width: 40;
+   height: 40px;
+   border-radius: 50%;
+   max-width: 100%;
+   margin: 0 10px;
+   position: relative;
+   box-shadow: 0px 0px 5px 4px black;
+   background-color: gray;
+   transition: all 1s;
+   display: block;
+   float: left;
 }
 
 header img:hover {
-    filter: brightness(150%);
-    box-shadow: none;
-    transform: translateY(5px);
-    background-color: yellow;
+   filter: brightness(150%);
+   box-shadow: none;
+   transform: translateY(5px);
+   background-color: yellow;
 }
 
 header h3 {
-    text-align: center;
-    padding: 20px;
-    background-color: yellow;
-    width: 25%;
-    border-radius: 12px;
-    border: 1px solid wheat;
-    margin: 0 auto;
-    position: relative;
-    transition: all 1s;
+   text-align: center;
+   padding: 20px;
+   background-color: yellow;
+   width: 25%;
+   border-radius: 12px;
+   border: 1px solid wheat;
+   margin: 0 auto;
+   position: relative;
+   transition: all 1s;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+   text-decoration: none;
+   color: inherit;
 }
 
 header h3:hover {
-    filter: brightness(150%) opacity(80%);
-    background-color: green;
-    cursor: pointer;
-    transform: translateY(10px);
+   filter: brightness(150%) opacity(80%);
+   background-color: green;
+   cursor: pointer;
+   transform: translateY(10px);
 }
 
 iframe {
-    position: absolute;
-    height: 300px;
-    width: 500px;
-    background-color: gray;
+   position: absolute;
+   height: 300px;
+   width: 500px;
+   background-color: gray;
 }
 
 .form-container {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px black;
-    margin: 0 auto;
-    margin-top: 35vh;
-    padding: 10px;
-    text-align: center;
-    display: block;
+   width: 300px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 1px 1px 5px 1px black;
+   margin: 0 auto;
+   margin-top: 35vh;
+   padding: 10px;
+   text-align: center;
+   display: block;
 }
 
 .form-container h4 {
-    text-align: center;
-    color: green;
+   text-align: center;
+   color: green;
 }
 
 .notas {
-    background-color: #fcfcfc;
-    border-radius: 10px;
+   background-color: #fcfcfc;
+   border-radius: 10px;
 }
 
 .notas input {
-    padding: 1px;
-    margin: 5px;
-    width: 80px;
+   padding: 1px;
+   margin: 5px;
+   width: 80px;
 }
 
 .button button {
-    padding: 2px;
-    margin: 10px auto;
-    display: block;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    width: 50%;
+   padding: 2px;
+   margin: 10px auto;
+   display: block;
+   text-align: center;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   border-radius: 4px;
+   width: 50%;
 }
 
 .button #button0 {
-    background-color: darkblue;
-    color: white;
-    margin-top: 2px;
+   background-color: darkblue;
+   color: white;
+   margin-top: 2px;
 }
 
 .button button:hover {
-    border: 1px solid black;
+   border: 1px solid black;
 }
 
 .resultado #resultado {
-    text-align: center;
+   text-align: center;
 }
 
 .resultado input {
-    padding: 2px;
-    border-radius: 4px;
-    font-size: 1.6rem;
-    background-color: black; 
+   padding: 2px;
+   border-radius: 4px;
+   font-size: 1.6rem;
+   background-color: black;
 }
 
 .situacao input {
-    width: 100%;
-    color: transparent;
-    border: 0;
-    border-radius: 10px;
-    text-align: center;
-    background-color: purple;
+   width: 100%;
+   color: transparent;
+   border: 0;
+   border-radius: 10px;
+   text-align: center;
+   background-color: purple;
 }
 
 .clean #button1 {
-    padding: 2px;
-    margin: 0px auto;
-    display: block;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 4px;
-    width: 30%;
-    background-color: #ff0000;
-    color: white;
-    margin-bottom: 3px;
+   padding: 2px;
+   margin: 0px auto;
+   display: block;
+   text-align: center;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   border-radius: 4px;
+   width: 30%;
+   background-color: #ff0000;
+   color: white;
+   margin-bottom: 3px;
 }
 
 .clean #button1:hover {
-    border: 1px solid black;
+   border: 1px solid black;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-    text-decoration: none;
-    color: orangered;
+   text-decoration: none;
+   color: orangered;
 }
 
 .form-container1 {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px black;
-    margin: 5px auto;
-    padding: 10px;
-    text-align: center;
-    display: block;
+   width: 300px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 1px 1px 5px 1px black;
+   margin: 5px auto;
+   padding: 10px;
+   text-align: center;
+   display: block;
 }
 
 .mensagem {
-    width: 300px;
-    background-color: transparent;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 1px black;
-    margin: 5px auto;
-    padding: 10px;
-    text-align: center;
-    display: block;
+   width: 300px;
+   background-color: transparent;
+   border-radius: 10px;
+   box-shadow: 1px 1px 5px 1px black;
+   margin: 5px auto;
+   padding: 10px;
+   text-align: center;
+   display: block;
 }
 
 .erro {
-    border-color: red;
+   border-color: red;
 }
