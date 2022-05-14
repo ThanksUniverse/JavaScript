@@ -15,24 +15,13 @@
 
 //*Info: verifyLetters-verifyDigits-verifyCep all almost have the same requirements
 
-//Declarations
-
-let = ValidLetters = document.querySelectorAll("input.verifyLetters");
-let = ValidEmail = document.querySelectorAll("input.verifyEmail");
-let = ValidDigits = document.querySelectorAll("input.verifyDigits");
-let = ValidCep = document.querySelectorAll("input.verifyCep");
-let = ValidCity = document.querySelectorAll("input.verifyCity");
-
 //Cancel submit when didnt meet the requirements
 
 const form0 = document.getElementById("form0");
 form0.addEventListener("submit", function (event) {
    event.preventDefault();
-   event.stopPropagation();
 
-   if (form0.classList.contains("error"));
-   {
-      document.querySelector(".message").innerHTML = "Verifique os campos";
+   if (form0.classList.contains("error")) {
       document.getElementsByName("nome")[0].placeholder = "*Nome";
       document.querySelector('[name = "nome"]').classList.add("need");
       document.getElementsByName("email")[0].placeholder = "*Email";
@@ -44,8 +33,12 @@ form0.addEventListener("submit", function (event) {
       document.getElementsByName("cidade")[0].placeholder = "*Cidade";
       document.querySelector('[name= "cidade"]').classList.add("need");
       return false;
+   } else {
+      document.getElementById("form0").submit();
    }
 });
+
+console.log("Pedro");
 
 //Limit Characters
 
@@ -69,6 +62,7 @@ function verifyLetters(doc) {
          document.querySelector(".message").innerHTML = "";
          this.classList.remove("error");
          this.parentNode.classList.remove("error");
+         document.querySelector('[name = "nome"]').classList.remove("need");
       } else {
          document.querySelector(".message").innerHTML = "O campo nome é obrigatório";
          document.getElementsByName("nome")[0].placeholder = "*Nome";
@@ -91,6 +85,7 @@ function verifyEmail(doc) {
          document.querySelector(".message").innerHTML = "";
          this.classList.remove("error");
          this.parentNode.classList.remove("error");
+         document.querySelector('[name = "email"]').classList.remove("need");
       } else {
          document.querySelector(".message").innerHTML = "O campo email é obrigatório";
          document.getElementsByName("email")[0].placeholder = "*Email";
@@ -113,6 +108,7 @@ function verifyDigits(doc) {
          document.querySelector(".message").innerHTML = "";
          this.classList.remove("error");
          this.parentNode.classList.remove("error");
+         document.querySelector('[name = "uf"]').classList.remove("need");
       } else {
          document.querySelector(".message").innerHTML = "O campo UF é obrigatório";
          document.getElementsByName("uf")[0].placeholder = "*UF";
@@ -135,6 +131,7 @@ function verifyCep(doc) {
          document.querySelector(".message").innerHTML = "";
          this.classList.remove("error");
          this.parentNode.classList.remove("error");
+         document.querySelector('[name = "cep"]').classList.remove("need");
       } else {
          document.querySelector(".message").innerHTML = "O campo cep é obrigatório";
          document.getElementsByName("cep")[0].placeholder = "*CEP";
@@ -157,6 +154,7 @@ function verifyCity(doc) {
          document.querySelector(".message").innerHTML = "";
          this.classList.remove("error");
          this.parentNode.classList.remove("error");
+         document.querySelector('[name = "cidade"]').classList.remove("need");
       } else {
          document.querySelector(".message").innerHTML = "O campo cidade é obrigatório";
          document.getElementsByName("cidade")[0].placeholder = "*Cidade";
@@ -166,6 +164,14 @@ function verifyCity(doc) {
       }
    });
 }
+
+//Declarations
+
+let ValidLetters = document.querySelectorAll("input.verifyLetters");
+let ValidEmail = document.querySelectorAll("input.verifyEmail");
+let ValidDigits = document.querySelectorAll("input.verifyDigits");
+let ValidCep = document.querySelectorAll("input.verifyCep");
+let ValidCity = document.querySelectorAll("input.verifyCity");
 
 //Loops
 
