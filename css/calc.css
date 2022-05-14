@@ -174,3 +174,29 @@ footer a {
     text-decoration: none;
     color: orangered;
 }
+
+.form-container1 {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.mensagem {
+    width: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.erro {
+    border-color: red;
+}

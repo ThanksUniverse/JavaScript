@@ -1,6 +1,5 @@
 //Change Form submit type
-
-document.addEventListener('submit', function(evento){
+document.getElementById('form0').addEventListener('submit', function(evento){
     evento.preventDefault();
     evento.stopPropagation();
 });
