@@ -7,12 +7,8 @@
 }
 
 html {
-   font-family: Poppins, sans-serif;
-}
-
-body {
    background-color: #eaeaea;
-   transition: 1s all;
+   font-family: Poppins, sans-serif;
 }
 
 .container {
@@ -90,31 +86,4 @@ button {
 
 .error h5 {
    color: red;
-}
-
-img#dark {
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   position: relative;
-   transition: 0.5s all;
-   background-color: gray;
-}
-
-img:hover#dark {
-   position: relative;
-   transform: translateY(2px);
-   filter: drop-shadow(0 0 5px 5px);
-   box-shadow: 0px 0px 10px black;
-   cursor: pointer;
-}
-
-img {
-}
-
-img:hover {
-}
-
-.dark {
-   background-color: #333;
 }

@@ -190,15 +190,3 @@ for (let Focused of ValidCep) {
 for (let Focused of ValidCity) {
    verifyCity(Focused);
 }
-
-//Dark Mode
-
-function ThemeChange() {
-   document.body.classList.toggle("dark");
-   let image = document.getElementById("dark");
-   if (image.src.match("../images/dark.webp")) {
-      image.src = "../images/light.png";
-   } else {
-      image.src = "../images/dark.webp";
-   }
-}
