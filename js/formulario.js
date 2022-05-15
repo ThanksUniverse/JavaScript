@@ -15,7 +15,7 @@
 
 //*Info: verifyLetters-verifyDigits-verifyCep all almost have the same requirements
 
-//Cancel submit when didnt meet the requirements
+//Cancel submit when didn't meet the requirements
 
 const form0 = document.getElementById("form0");
 form0.addEventListener("submit", function (event) {
@@ -43,10 +43,10 @@ console.log("Pedro");
 //Limit Characters
 
 function LimitCharacters(doc) {
-   let = max = 2;
+   let max = 2;
 
    if (doc.value.length > max) {
-      doc.value = doc.value.substr(1, max); //Se colocar 1 apaga o primeiro número
+      doc.value = doc.value.substr(0, max); //Se colocar 1 apaga o primeiro número
    }
 }
 

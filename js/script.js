@@ -5,7 +5,7 @@ const form01 = document.getElementById("form01");
 if (form01)
    form01.addEventListener("submit", function (evento) {
       evento.preventDefault(); //Formulário para de ter o comportamento padrão do html
-      evento.stopPropagation(); //Faz com que todo submit de form caia nessa função
+      evento.stopPropagation(); //Faz com que todos submit de form caia nessa função
 
       if (this.classList.contains("erro")) {
          return false;
@@ -69,7 +69,7 @@ function Validation(elemento) {
       if (this.value == "") {
          document.querySelector(".mensagem").innerHTML = "Verifique o preenchimento dos campos em vermelho";
          this.classList.add("erro");
-         this.parentNode.classList.add("erro"); //Adiciona Classe no ParerntNode(Pai) no caso no formulário, impedindo que envie o formulário
+         this.parentNode.classList.add("erro"); //Adiciona Classe no ParentNode(Pai) no caso no formulário, impedindo que envie o formulário
          return false;
       } else {
          document.querySelector(".mensagem").innerHTML = "";
@@ -90,21 +90,21 @@ function NumericValidation(elemento) {
       } else {
          document.querySelector(".mensagem").innerHTML = "O campo é apenas numérico";
          this.classList.add("erro");
-         this.parentNode.classList.add("erro"); //Adiciona Classe no ParerntNode(Pai) no caso no formulário, impedindo que envie o formulário
+         this.parentNode.classList.add("erro"); //Adiciona Classe no ParentNode(Pai) no caso no formulário, impedindo que envie o formulário
          return false;
       }
    });
 }
 
 function EmailValidation(elemento) {
-   const emailValido = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i; //Flag i significa para ignorar se for fonte maiuscula ou minuscula
+   const emailValido = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i; //Flag i significa para ignorar se for fonte maiúscula ou minuscula
    elemento.addEventListener("focusout", function (event) {
       event.preventDefault();
 
       if (this.value.match(emailValido)) {
          document.querySelector(".mensagem").innerHTML = "O campo é apenas numérico";
          this.classList.add("erro");
-         this.parentNode.classList.add("erro"); //Adiciona Classe no ParerntNode(Pai) no caso no formulário, impedindo que envie o formulário
+         this.parentNode.classList.add("erro"); //Adiciona Classe no ParentNode(Pai) no caso no formulário, impedindo que envie o formulário
          return false;
       } else {
          document.querySelector(".mensagem").innerHTML = "";
